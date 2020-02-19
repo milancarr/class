@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .subject {
+            color: mediumpurple;
+            font-style: italic;
+
+        }
+        .background {
+            color: blue;
+        }
+        .subject1 {
+            color: deeppink;
+        }
+        .subject2 {
+            color: indigo;
+        }
+        .file {
+            color: yellowgreen;
+        }
+        .submit {
+            color: indianred;
+        }
+        .select{
+            background-color: powderblue;
+        }
+    </style>
+</head>
+<body>
+<p>Username:
+<form action="http://example.com/join.php"
+method="post">
+    <input type="text" name="username"
+           size="15" maxlength="30" class="subject" />
+</p>
+<p>Password</p>
+    <input type="password" name="password"
+           size="15" maxlength="30" class="background" />
+</p>
+<p>Your major:<br />
+    <input type="radio" name="major" value="IS" checked="checked" class="subject1" /> IS
+    <input type="radio" name="major" value="Accounting" /> Accounting
+    <input type="radio" name="major" value="Supply Chain" /> Supply chain
+</p>
+<textarea name="comment" id="comment" cols="40" rows="4" class="subject2"> Enter comments here</textarea>
+<p>
+    Multiple Major: <br />
+    <input type="checkbox" name="majorc" value="IS" checked="checked" /> IS
+    <input type="checkbox" name="majorc" value="Accounting" /> Accounting
+    <input type="checkbox" name="majorc" value="Supply Chain" /> Supply chain
+</p>
+<select name="majors" class="select">
+    <option value="IS"
+            selected="selected">IS</option>
+    <option value="Accounting"
+            selected="selected">Accounting</option>
+    <option value="Supply Chain"
+            selected="selected">Supply Chain</option>
+</select>
+<br>
+<input type="file" name="resume" class="file" />
+<input type="submit" value="Submit" class="submit"
+</form>
+
+</body>
+</html>
